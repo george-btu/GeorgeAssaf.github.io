@@ -8,6 +8,7 @@
   <style>
       body {
       font-family: Arial, sans-serif;
+      font-size: 12pt;
       line-height: 1.6;
       margin: 0;
       padding: 0;
@@ -21,13 +22,16 @@
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 16pt;
       margin: 0;
     }
 
     h2 {
-      font-size: 1.8rem;
-      margin: 0;
+      font-size: 14pt;
+       margin: 0;
+       margin-bottom: 0.5rem;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 0.25rem;
     }
 
     .container {
@@ -38,6 +42,7 @@
 
     .section {
       margin-bottom: 2rem;
+      position: relative;
     }
 
     .section h3 {
@@ -60,14 +65,27 @@
       list-style-type: disc;
     }
 
+    .section-title {
+      background-color: #007bff; /* Blue color for the stripe */
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      margin: 0;
+      position: absolute;
+      top: -1.8rem; /* Adjust this value for better alignment */
+      left: 1rem;
+      right: 0; /* Stretch the stripe to the full page width */
+    }
+
     .contact {
       text-align: center;
       margin-top: 2rem;
-      background-color: grey;
+      background-color: rgb(210, 84, 151);
     }
 
     .contact a {
-      color: #333;
+      color: #4309e0d0;
       text-decoration: none;
       margin: 0 0.5rem;
    
@@ -126,6 +144,44 @@
       display: inline-block;
       margin-top: 0.5rem;
     }
+
+    .vspace { margin-top:1.33em; }
+
+
+
+
+    .section h3 {
+      font-size: 1.5rem;
+      margin: 0;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .section table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.5rem;
+    }
+
+    .section th, .section td {
+      padding: 0.5rem;
+      border: none; /* Remove visible borders */
+    }
+
+    .section th {
+      text-align: left;
+      font-weight: normal;
+    }
+
+      /* Prevent wrapping in the year column */
+      .section td.year {
+      white-space: nowrap;
+      /* font-size: 9pt; */
+      font-weight: bold;
+
+
+    }
+
   </style>
 </head>
 <body>
@@ -136,9 +192,9 @@
 
   <div class="container">
     <div class="section">
-      <h3>About Me</h3>
+      <h3>Bio</h3>
       <p>
-         I'm a passionate Software Engineer and Researcher with a diverse background. In the early stages of my career, I focused on exploring the fascinating world of network protocol security. My research revolved around developing algorithms and data structures to enhance the security of network protocols, especially in the context of mobile ad hoc networks.
+        I hold a PhD degree in Computer Science, specialized in Data Structures and Software Dependability. I'work as Software Engineer and Researcher with a diverse background. In the early stages of my career, I focused on exploring the fascinating world of network protocol security. My research revolved around developing algorithms and data structures to enhance the security of network protocols, especially in the context of mobile ad hoc networks.
 
         As my career evolved, I developed a profound interest in Systems Biology modelling and simulation. My current research focuses on employing advanced approaches, particularly coloured Petri nets, to model and simulate complex biological systems. Through this, I aim to contribute to the understanding of biological processes at a deeper level.
         
@@ -152,21 +208,55 @@
       </p>
     </div>
 
+
+
+    <div class="container">
+      <div class="section">
+        <h2>Education</h2>
+        <table>
+          <tr>
+            <td  class="year" valign="top"> Oct. 2018 - Dec. 2021</td>
+            <td rowspan="2">PhD in Computer Science, Brandenburg University of Technology, Data Structures and Software Dependability Chair, Germany.
+            </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td  class="year" valign="top">Sep. 2013 – Mar. 2016 </td>
+            <td rowspan="2">M.Sc in Informatics Engineering (3-year programm), Al-Baath University, Computer Systems and Networks Chair, Syria.
+            </td>
+          </tr>
+        </table>
+
+
+        <table>
+          <tr>
+            <td  class="year" valign="top">Sep. 2007 – May 2012 </td>
+            <td rowspan="2">B.Eng in Informatics Engineering (5-year programm),  Al-Baath University, Computer Systems and Networks Chair, Al-Baath University, Syria.
+            </td>
+          </tr>
+        </table>
+
+      
+      </div>
+
     <div class="section">
-      <h3>Education</h3>
+      <h2 >Education</h2>
       <ul>
         <li>Bachelor of Science in Computer Science, XYZ University</li>
         <li>Certification in Web Development, ABC Coding Institute</li>
       </ul>
     </div>
 
+
     <div class="section">
-      <h3>Skills</h3>
+      <h2>Skills</h2>
    
     </div>
 
     <div class="section">
-      <h3>Experience</h3>
+      <h2>Experience</h2>
       <p>
         Software Developer, XYZ Tech Solutions (2019 - Present)<br>
         - Developed and maintained web applications using React.js and Node.js.<br>
@@ -181,7 +271,7 @@
 
 
     <div class="section publications">
-      <h3>Conference Publications</h3>
+      <h2>Conference Publications</h2>
       <p class="hint">Click on the publication titles to read more.</p>
 
        <!-- Add more publication items as needed -->
@@ -220,7 +310,7 @@
 
 
     <div class="section publications">
-        <h3>Journal Publications</h3>
+        <h2>Journal Publications</h2>
         <p class="hint">Click on the publication titles to read more.</p>
 
 
@@ -314,7 +404,7 @@
     <div class="contact">
       <a href="mailto:assaf.george.89@web.de">assaf.george.89@web.de</a>
       <a href="https://github.com/PetriNuts" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/george-assaf-sw89/" target="_blank">LinkedIn</a>
+      <a href="https://linkedin.com/in/your-linkedin-username" target="_blank">LinkedIn</a>
     </div>
   </div>
 </body>
