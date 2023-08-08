@@ -5,19 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>George Assaf - Software Engineer</title>
-  <script>
-    function updateVisitCount() {
-        if (localStorage.visitCount) {
-            localStorage.visitCount = parseInt(localStorage.visitCount) + 1;
-        } else {
-            localStorage.visitCount = 1;
-        }
-
-        document.getElementById("visitCount").textContent = localStorage.visitCount;
-    }
-
-    window.onload = updateVisitCount;
-</script>
+  <script src="counter.js"></script>
+  
 
   <style>
       body {
@@ -532,7 +521,7 @@ text-decoration: none
       <a href="mailto:assaf.george.89@web.de">assaf.george.89@web.de</a>
       <a href="https://github.com/PetriNuts" target="_blank">GitHub</a>
       <a href="https://linkedin.com/in/your-linkedin-username" target="_blank">LinkedIn</a>
-      <span id="visitCount">0</span> times visits.
+      <span id="visitCount">0</span>  visits.
     </div>
   </div>
 </body>
